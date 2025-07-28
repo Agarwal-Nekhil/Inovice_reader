@@ -1,0 +1,8 @@
+.env
+venv/
+__pycache__/
+*.pyc
+extracted_data.json
+extracted_flags.json
+temp_invoices/
+template # If 'template.json' is present but you don't want to track it

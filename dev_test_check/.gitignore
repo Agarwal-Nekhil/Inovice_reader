@@ -1,0 +1,7 @@
+.env
+venv/
+__pycache__/
+*.pyc
+extracted_data.json
+extracted_flags.json
+temp_invoices/

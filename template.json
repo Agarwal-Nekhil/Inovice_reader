@@ -1,0 +1,11 @@
+{
+  "invoice_number": "",
+  "date": "",
+  "vendor_name": "",
+  "vendor_address": "",
+  "customer_name": "",
+  "customer_address": "",
+  "total_amount": "",
+  "due_date": "",
+  "line_items": ""
+}

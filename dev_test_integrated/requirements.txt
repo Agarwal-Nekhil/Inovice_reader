@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+mistralai>=0.2.0
+pytesseract
+pdf2image
+langchain-community
+langchain-huggingface
