@@ -16,8 +16,9 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy your application code - IMPORTANT: Change this line
-COPY main_hugging_face.py main.py # Copy main_hugging_face.py and rename it to main.py inside the container
+# Copy your application code
+# Copy main_optimized.py and rename it to main.py inside the container
+COPY main_optimized.py main.py
 
 # Create a directory for temporary invoice files
 RUN mkdir -p /app/temp_invoices
