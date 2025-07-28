@@ -7,3 +7,4 @@ pdf2image
 langchain-community
 langchain-huggingface
 python-multipart 
+sentence-transformers 
