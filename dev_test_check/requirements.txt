@@ -6,3 +6,4 @@ pytesseract
 pdf2image
 PyPDF2
 langchain-community # Although not directly used for RAG, PyPDFLoader fallback might need it.
+python-multipart 
