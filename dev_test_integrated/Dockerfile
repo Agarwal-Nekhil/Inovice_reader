@@ -16,9 +16,8 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy your application code
-# Copy main_optimized.py and rename it to main.py inside the container
-COPY main_optimized.py main.py
+# Copy your application code - IMPORTANT: Change this line to main_hugging_face.py
+COPY main_hugging_face.py main.py # Copy main_hugging_face.py and rename it to main.py inside the container
 
 # Create a directory for temporary invoice files
 RUN mkdir -p /app/temp_invoices
@@ -26,5 +25,5 @@ RUN mkdir -p /app/temp_invoices
 # Expose the port your FastAPI application will run on
 EXPOSE 8000
 
-# Command to run your FastAPI application with Uvicorn - IMPORTANT: Change this line
+# Command to run your FastAPI application with Uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
